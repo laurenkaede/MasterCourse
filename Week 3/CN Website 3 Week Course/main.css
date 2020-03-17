@@ -1,0 +1,286 @@
+
+* { 
+    box-sizing: border-box;
+    color:  rgb(247, 241, 245);
+    text-transform: full-width;  
+}
+
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 18.5%;
+  left: 95%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: rgb(100,100,100);
+  padding: .5px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #7dbbf1;
+}
+
+.refcontainer {
+  display:flex;
+  flex-direction: row;
+}
+
+.txtindent {
+text-indent: 60px;
+text-align: justify;
+line-height: 1.5;
+text-shadow: 1px 1px 1px rgb(66, 66, 66),
+                   3px 3px 8px black; 
+font-size: 18px;
+}
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img1 {         
+    background-image: url("homepic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #FFFFFF;
+    background-position: center center;
+} 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(27, 27, 27);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0px;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(189, 96, 161, 0.87);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(32, 32, 32);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(189, 96, 161);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  
+  #textPadding {
+      padding: 10px;
+      text-align: center; 
+  }
+
+    h1 {
+      color:  rgb(252, 247, 247);
+      text-align: center;
+      text-shadow: 1px 1px 1px rgb(66, 66, 66),
+	  	             3px 3px 8px black; 
+    }
+
+    h2 {
+        color:  rgb(189, 96, 161);
+        text-align: center;
+        text-shadow: 1px 1px 1px rgb(66, 66, 66),
+	  	             3px 3px 8px black;
+    }
+
+    h3 {
+      color:  rgb(189, 96, 161);
+      text-align: center;
+      font-weight: bold; 
+      font-size: 24px;
+      text-shadow: 1px 1px 1px rgb(66, 66, 66),
+	  	             3px 3px 8px black;
+    }
+
+    h4 {
+      color:  rgb(189, 96, 161);
+      text-align: center center;
+      font-weight: bold;
+      font-size: 20px;
+      text-indent: 0px;
+      text-shadow: 1px 1px 1px rgb(66, 66, 66),
+                   3px 3px 8px black; 
+      line-height: 1.5;
+                   
+    }
+
+    h5 {
+      color: rgb(6, 136, 136);
+      font-weight: bold;
+      text-align: center center;
+      font-size: 20px;
+      text-shadow: 1px 1px 1px rgb(66, 66, 66),
+                    3px 3px 8px black; 
+    }
+
+    h6 {
+      color:  rgb(6, 136, 136);
+      font-weight: bold;
+      text-align: center;
+      text-decoration: underline;
+      text-shadow: 1px 1px 1px rgb(66, 66, 66),
+                       3px 3px 8px black; 
+      font-size: 36px;
+    }
+    
+#mh4 {
+  margin: 25px 50px 25px 50px; 
+      }
+
+.mainMargin {
+  display: flex;
+  justify-content: center;
+}
+
+.maintextalign {
+  text-align:  center justify;
+}
+
+.backcolor {
+  background-color:  rgb(231, 228, 231); 
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.backImg1 {
+    background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ),
+      
+      url("back1.jpg");
+    
+
+}
+
+.backImg2 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url("back2.jpg");
+    
+
+}
+
+.backImg3 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url("back3.jpg");
+    
+
+}
+
+.backImg4 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url("back4.jpg");
+    
+}
+
+.backImg5 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url("back5.jpg");
+   
+}
+
+.backImg6 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url("homepic.jpg");
+    background-size: cover;}
+
+.backImg7 {
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    
+    url("back6.jpg");
+    }
+

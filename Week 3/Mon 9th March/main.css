@@ -1,0 +1,36 @@
+* { 
+    box-sizing: border-box;
+    color:  rgb(15, 15, 15);
+    text-transform: full-width;  
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+h1 {
+    text-align: center; 
+}
+
+h2 {
+    color:  rgb(135, 73, 145);
+    text-align: center; 
+}
+
+h3 {
+    color:  rgb(97, 165, 159);
+    text-align: center;
+}
+
+.txtindent {
+    text-indent: 60px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.imgcenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

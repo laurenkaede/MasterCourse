@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(170, 43, 132);
+    height: 100vh; 
+    display: inline-block;
+    width: 50%;
+}
+
+.divOne, .divTwo {
+    width: 40%;
+    height: 100px;
+    display: inline-block;
+    background-color: paleturquoise;
+    margin-right: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    .divOne {
+        background-color: plum;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .divOne {
+        background-color: royalblue;
+    }
+    
+    .divTwo {
+        display: none;
+    }
+}

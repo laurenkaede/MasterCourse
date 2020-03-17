@@ -1,0 +1,46 @@
+* {
+    color: blueviolet;
+}
+body {
+    background-color: rgb(147, 170, 240);
+}
+
+h1 {
+    background-color: rgb(189, 184, 184);
+    color: black;
+}
+
+#main-title {
+    color: rgb(136, 81, 138);
+}
+
+/* Id targets one individual element, always starts with a '#' */
+
+.highlights {
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Bellota', cursive;
+}
+
+/* Class targets multiple elements, always starts with a '.' */
+
+.important {
+    color: steelblue;
+}
+
+h4 {
+    color: orange
+}
+
+#primary h4 {
+    color: palevioletred;
+}
+
+li {
+    color: rgb(110, 199, 211);
+    list-style: none; /* erases bullet points */
+}
+
+#primary ul li {
+    color: rgb(136, 81, 138);
+}

@@ -1,0 +1,134 @@
+ul li:first-child {
+    color: orange;
+}
+
+ul li:last-child {
+    color: blueviolet;
+}
+
+ul li:nth-child(3) {
+    color: cornflowerblue;
+}
+
+ul li:nth-child(2) {
+    color: rgb(60, 158, 133);
+}
+
+h1 {
+    display: inline-block;
+    background-color: orange;
+    padding: 20px 50px;
+    border: 4px dashed rgb(8, 71, 126);
+    margin: 20px 50px;
+}
+
+p {
+    display: inline-block;
+}
+
+#myDiv {
+    width: 10px;
+    height: 50px;
+    background-color: blueviolet;
+    display: inline-block;
+}
+
+#secondDiv {
+    width: 10px;
+    height: 50px;
+    background-color: rgb(190, 155, 223);
+    display: inline-block;
+}
+
+#danger {
+    color: crimson;
+}
+
+.parent {
+    display: inline-block;
+    background-color: rgb(190, 155, 223);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    /* To allow child to move around. */
+}
+
+.parent p {
+    display: block;
+    text-align: center;
+
+}
+
+.child {
+    display: inline-block;
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* To move child around relative to parent. */
+    right: 200px;
+    /* Can either use left or right, but not both */
+    bottom: 200px;
+    /* Can either use top or bottom, but not both */
+}
+
+.myBackground {
+    height: 400px;
+    background-image: url('../purpleBackground.jpeg');
+    background-repeat: no-repeat;
+    /* won't repeat the background image (if it's too small, for example) */
+    border: 3px solid black;
+    /* background-size: contain; // Contains the entire image. */
+    background-size: cover;
+    background-position: -50px -100px;
+    /* First value is on horizontally, second value is vertically. */
+}
+
+.mainDiv {
+    background-color: coral;
+    height: 500px;
+    padding: 50px 100px;
+}
+
+.first,
+.second {
+    background-color: rgb(30, 83, 151);
+    height: 100px;
+    margin-bottom: 50px;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+ /* max width set to 768px as no ipad screen is larger than 768px. */
+
+@media only screen and (max-width: 768px) {
+    .second {
+        background-color: red;
+    }
+}
+
+ /* max width set to 500px as no phone screen is larger than 500px. */
+ 
+@media only screen and (max-width: 500px) {
+    .first {
+        background-color: yellow;
+    }
+    .second {
+        background-color: pink;
+    }
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* @media only screen and (max-width: 768px) {
+    .second {
+        background-color: red;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .first {
+        background-color: yellow;
+    }
+    .second {
+        background-color: pink;
+    }
+} */

@@ -5,8 +5,15 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* Top of Page - Heading */
 
+html, body {
+    padding: 0;
+    margin: 0;
+  }
 
 h1 {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-bottom: none;
     text-align: center;
     font-family: 'IBM Plex Mono';
     font-style: inherit;
@@ -65,10 +72,13 @@ header {
     background-image: url('../img/bamboo.png');
     background-color: rgb(107, 136, 107);
     background-position: stretch;
+    display: block;
+    
 }
 
 .explanation {
     background-color: white;
+    padding-bottom: 20px;
     }
     
 .requirements p a, .summary p a, .participation p a {
@@ -84,6 +94,7 @@ header {
 p[role="contentinfo"] a, p[role="contentinfo"] {
     background-color: rgb(99, 145, 99);
     text-align: center;
+    padding-bottom: 10px;
    
 }
 
@@ -102,6 +113,8 @@ p[role="contentinfo"] {
 
 .requirements {
     background-color: white;
+    padding-top: 20px;
+
 }
 
 
@@ -115,6 +128,7 @@ p[role="contentinfo"] {
 }
 
 footer {
+    display: block;
     background-color: rgb(61, 83, 83);
     text-align: center;
     color: white;
@@ -122,14 +136,41 @@ footer {
     text-decoration: none;
 }
 
+i {
+    background-color: rgb(61, 83, 83);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none; 
+    list-style-type: none; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .wrapper {
-    color: rgba(184, 190, 196, 0.877); 
+    background-color: rgb(220, 233, 207, 0.50);
     text-decoration: none;
     font-family: 'Roboto'; 
     list-style-type: none; 
+    display: block;
+    margin-bottom: 50px;
 }
+
+.wrapper ul li {
+    color: black;
+}
+
+  .previous, .next {
+    left: 0;
+    z-index: 3;
+  }
+  .next {
+    left: auto;
+    right: 0;
+  }
 
 .design-name {
     color: black;
@@ -137,7 +178,7 @@ footer {
 }
 
 .designer-name {
-    color: rgba(184, 190, 196, 0.877); 
+    color: rgba(184, 190, 196); 
     text-decoration: none; 
 }
 
@@ -145,12 +186,14 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
+    
 }
 
 .design-archives ul li a {
     list-style-type: none; 
     text-decoration: none;
-    color: rgba(184, 190, 196, 0.877); 
+    color: rgba(184, 190, 196); 
+    /* column-count: 2; */
 }
 
 /* nav [role="navigation"] {
@@ -161,9 +204,19 @@ footer {
 .zen-resources ul li a {
     list-style-type: none; 
     text-decoration: none;
-    color: rgba(184, 190, 196, 0.877); 
+    color: rgba(184, 190, 196); 
+    column-count: 2;
+   
 }
 
-.design-name, .designer-name, .design-archives {
-    background-color: chartreuse;
+
+.zen-resources, .design-archives, .design-selection {
+    column-count: 2;
+    column-width: 100px;
+    text-align: center;
+   
+}
+
+nav {
+    /* background-color: rgb(220, 233, 207); */
 }

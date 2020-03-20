@@ -30,13 +30,15 @@ p {
 }
 
 #roll {
-    top: 50%;
-    left: 48%;
+    top: 60%;
+    left: 47%;
+    position: fixed;
 }
 
 #startagain {
     top: 55%;
-    left: 45%;
+    left: 43%;
+    position: fixed;
 }
 
 
